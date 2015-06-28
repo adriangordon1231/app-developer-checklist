@@ -1,0 +1,33 @@
+<div class="container">
+
+  <div class="row">
+
+      <div class="col-sm-12">
+          <h1 class="text-center">Mobile Development Checklist - {{checklist.completePercentage | percentage }}</h1>
+      </div>
+
+  </div>
+
+  <div class="row checklist">
+
+      <div class="col-sm-6 col-md-4" ng-repeat="section in checklist.list">
+        <div class="section">
+          <div class="caption">
+
+              <img class="pull-right image" ng-src="{{section.thumbnail}}" alt="{{ section.sectionTitle }}" />
+              <h3 class="pull-left title">{{ section.sectionTitle }}</h3>
+
+            <div class="checkbox" ng-repeat="check in section.checks">
+              <label>
+                <input type="checkbox" value="{{check.value}}">
+                {{check.description}}
+              </label>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+</div>

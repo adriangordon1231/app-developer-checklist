@@ -1,0 +1,18 @@
+[
+  {
+    "sectionTitle":"Device Checks",
+    "thumbnail":"assets/images/angular.png",
+    "checks":[
+      {
+        "description":"The app be installed on the target device",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app behave as designed/desired if there is an incoming call",
+        "value":false,
+        "links":[]
+      }
+    ]
+  }
+]
