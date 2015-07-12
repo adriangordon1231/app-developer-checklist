@@ -14,6 +14,13 @@
         self.list = data.data;
 
       });
+
+
+
+      this.updateCompletionPercentage = function () {
+        self.completePercentage = CheckListFactory.calculateCompletionPercentage(self.list);
+      };
+
     });
 
 })();

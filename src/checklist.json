@@ -14,5 +14,21 @@
         "links":[]
       }
     ]
+  },
+  {
+    "sectionTitle":"Random Test Checks",
+    "thumbnail":"assets/images/angular.png",
+    "checks":[
+      {
+        "description":"random check",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"another random check",
+        "value":false,
+        "links":[]
+      }
+    ]
   }
 ]

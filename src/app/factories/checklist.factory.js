@@ -28,13 +28,37 @@
 
 
 
-      //todo: Complete this function
-      var calculateCompletionPercentage = function (checksArray, trueCount) {
 
-        var numOfChecks = checksArray.length;
+      /**
+       * [calculateCompletionPercentage description]
+       * @param  {[Object]} checklist [the checklist object ... the one retured from the getCheckList function]
+       * @return {[Number]}           [a decimal that represents the completion percetage (1 = 100%)]
+       */
+      var calculateCompletionPercentage = function (checklist) {
 
-        return numOfChecks / trueCount;
+        var listChecks = _.pluck(checklist,'checks')
 
+        // array of all the boolean values contained the checklist
+        // basically, they represent the true/false state of every 'check' in the object
+        var valuesArray = [];
+
+        listChecks.forEach(function (section) {
+
+          section.forEach(function (item) {
+            valuesArray.push(item.value);
+          });
+        });
+
+        var totalChecks = valuesArray.length;
+        var totalCompletedChecks = 0;
+
+        valuesArray.forEach(function (item) {
+          if(item === true){
+            totalCompletedChecks++;
+          }
+        });
+
+        return totalCompletedChecks / totalChecks;
 
       };
 

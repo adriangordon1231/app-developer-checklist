@@ -19,7 +19,7 @@
 
             <div class="checkbox" ng-repeat="check in section.checks">
               <label>
-                <input type="checkbox" value="{{check.value}}">
+                <input type="checkbox" ng-change="checklist.updateCompletionPercentage()" ng-model="check.value">
                 {{check.description}}
               </label>
             </div>
