@@ -12,20 +12,337 @@
         "description":"The app behave as designed/desired if there is an incoming call",
         "value":false,
         "links":[]
-      }
-    ]
-  },
-  {
-    "sectionTitle":"Random Test Checks",
-    "thumbnail":"assets/images/angular.png",
-    "checks":[
+      },
       {
-        "description":"random check",
+        "description":"The app behave as designed/desired when there is an incoming SMS",
         "value":false,
         "links":[]
       },
       {
-        "description":"another random check",
+        "description":"The app behave as designed/desired when the charger is connected",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app behave as designed/desired when the charger is disconnected",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app behave as designed/desired when the charger is disconnected",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app behave as designed/desired when the device goes to sleep mode",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app behave as designed/desired when the device resumes from sleep mode",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app behave as designed/desired when the device resumes from lock screen",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app behave as designed/desired when the device is tilted",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app behave as designed/desired when the device is shaken",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app behave as designed/desired when a local message is coming from another app (think of: calendar reminders, to-do task etc.)",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app behave as designed/desired when a push message is coming from another app (think of: facebook mentions, whatsapp message, etc)",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app interact with the GPS sensor correctly (switch on/off, retrieve GPS data)",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The functionality of all the buttons or keys on the device defined for this app",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"Buttons or keys which have no defined function have no unexpected behaviour on the app when activating",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"In case there’s a true “back” button available on the device, the “back” button take the user to the previous screen",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"In case there’s a true “menu” button available on the device, the menu button show the app’s menu",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"In case there’s a true “home” button available on the device, the home button get the user back to the home screen of the device",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"In case there’s a true “search” button available on the device, this get the user to some form of search within the app",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app behaves as designed/desired if the “Battery low” message is pushed",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app behaves as designed/desired if the sound on the device is turned off",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app behaves as designed/desired if the device is in airplane mode",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app can be de-installed from the device",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The application functions as expected after re-installation",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app be found in the app store (Check after it goes live)",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app switches to different apps on the device through multitasking as designed/desired?",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"All touch screen positions (buttons) are working when a screen protector is used",
+        "value":false,
+        "links":[]
+      }
+    ]
+  },
+  {
+    "sectionTitle":"Network Checks",
+    "thumbnail":"assets/images/angular.png",
+    "checks":[
+      {
+        "description":"Does the app behaves according to specification if connected to the internet through Wi-Fi",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app behaves according to specification when connected to the internet through 3G",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app behaves according to specification when connected to the internet through 2G",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app behaves according to specification if the app is out of network reach",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app resumes working when it gets back into network reach from outside the reach of the network",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"Transactions are processed correctly after re-establishing a network connection",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app still works correctly when tethering or otherwise connected to another device ",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app still works when the app switches between networks (Wi-Fi, 3G, 2G) ",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app uses standard network ports (Mail: 25, 143, 465, 993 or 995 HTTP: 80 or 443 SFTP: 22) to connect to remote services, as some providers block certain ports",
+        "value":false,
+        "links":[]
+      }
+    ]
+  },
+  {
+    "sectionTitle":"App Specific Checks",
+    "thumbnail":"assets/images/angular.png",
+    "checks":[
+      {
+        "description":"The app been tested on different type of devices and different versions of OS",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"Stability check: if the app has a list (for instance of pictures) in it, try scrolling through it at high speed. It is scroll smoothly?",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"Stability check: if the app has a list (for instance of pictures) in it, try scrolling to before the first picture or behind the last picture",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The apps size does not prevent downloading when connected to cellular networks (according to wat is allowed by the OS)",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"Integration: The app connects correctly to the different social networks (LinkedIn, twitter, facebook, etc)",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app does not interfere with other apps when in background/multitasking mode (using GPS, playing music, etc.)",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The search option in the app displays relevant results",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"Verified that most common gestures can be used to control the app (swiping, tapping, etc)",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"Unedisred actions/uses have been handled appropriately (e.g. undesired multitouch, for example – select two contacts from the phone book at the same time)",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"App name is self explanatory ",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app name is self explanatory ",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"Reloading of data from remote service has been properly designed to prevent performance issues at server-side. (manual reloading of data can reduce the amount of server calls)",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app go to sleep mode when running in the background",
+        "value":false,
+        "links":[]
+      }
+    ]
+  },
+  {
+    "sectionTitle":"User Interface Checks",
+    "thumbnail":"assets/images/angular.png",
+    "checks":[
+      {
+        "description":"The user can go back to a previous screen by touching a back button",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The main function of the app is apparent immediately. It should speak for itself. ",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"One action on the screen that is highlighted as the most likely for the user. (Example: in iOS a blue button represents the default or most likely action)",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"User actions have been minimized by using a pickers, radio buttons and checkboxes (over textfiends when possible)",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"If there is a long list of data to scroll trough, a search option is provided above the list. ",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"If performance is slow, a progress status icon (“Loading…”) is shown to the user",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The appearance of buttons that perform standard actions are not altered in the app (for instance: refresh, organize, trash, Reply, back, etc.)",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"Standard buttons are not used for other functions then that they are normally used for",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The app responds to all changes in device orientation, as per the design",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"You have not redefined gestures in your app that have standard meanings (example: swiping from top to bottom enables the notification center) ",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"You have not redefined gestures in your app that have standard meanings (example: swiping from top to bottom shows notifications) ",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"Requirement to login is delayed in the app as long as possible ... seriously, this is very annoying",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"Users are be warned about the consequences of deleting items in the app",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"The keyboard adjusts to expected the input (for instance numbers/letters when expected)",
+        "value":false,
+        "links":[]
+      },
+      {
+        "description":"Inactive buttons are clearly distinguished from active buttons",
         "value":false,
         "links":[]
       }
