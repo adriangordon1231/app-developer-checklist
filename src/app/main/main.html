@@ -3,19 +3,25 @@
   <div class="row">
 
       <div class="col-sm-12">
-          <h1 class="text-center">Mobile Development Checklist - {{checklist.completePercentage | percentage }}</h1>
+          <h1 class="text-center">Mobile Development Checklist - {{checklist.completePercentage | number: 2 | percentage }}</h1>
       </div>
 
   </div>
 
   <div class="row checklist">
 
-      <div class="col-sm-6 col-md-4" ng-repeat="section in checklist.list">
-        <div class="section">
-          <div class="caption">
+    <accordion close-others="{{flase}}">
 
-              <img class="pull-right image" ng-src="{{section.thumbnail}}" alt="{{ section.sectionTitle }}" />
-              <h3 class="pull-left title">{{ section.sectionTitle }}</h3>
+      <div class="col-sm-6 col-md-4" ng-repeat="section in checklist.list">
+
+        <accordion-group class="section" >
+
+          <accordion-heading>
+            <img class="pull-left image" ng-src="{{section.thumbnail}}" alt="{{ section.sectionTitle }}" />
+            <h4 class="title">{{section.sectionTitle}}</h4>
+
+          </accordion-heading>
+
 
             <div class="checkbox" ng-repeat="check in section.checks">
               <label>
@@ -24,10 +30,18 @@
               </label>
             </div>
 
-          </div>
-        </div>
+        </accordion-group>
+
       </div>
 
+    </accordion>
+
+  </div>
+
+  <div class="row footer">
+    <div class="col-sm-12">
+      icons desingned by Freepik
+    </div>
   </div>
 
 </div>
