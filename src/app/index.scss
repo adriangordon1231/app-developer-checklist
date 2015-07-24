@@ -27,6 +27,7 @@ $icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bo
   }
 }
 
+@import 'scss/_mixins.scss';
 @import "scss/main.scss";
 
 /**

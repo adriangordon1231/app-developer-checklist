@@ -1,10 +1,60 @@
-.checklist{
+/**
+ * General Styling
+ */
+html{
 
+  @include fullscreen;
+
+  body{
+     @include fullscreen;
+     background-image: url("../assets/images/bg.png");
+  }
+}
+
+.main-title{
+  text-decoration: underline;
+  font-style: italic;
+
+}
+
+
+
+
+/**
+ * color classes
+ */
+
+.brightRed{
+  color:#f00;
+}
+
+.orange{
+  color:orange
+}
+
+.yellow{
+  color: #E4C30D;
+}
+
+.green{
+  color:green;
+}
+
+.black{
+  color:black;
+}
+
+
+
+/**
+ * Checklist Styling
+ */
+.checklist{
   margin-top:3em;
 
   .section{
-
     margin-bottom:2em;
+
 
     .title{
       margin-left:2.5em;
@@ -17,10 +67,8 @@
     }
 
     .checkbox{
-      margin-bottom:1.5em;  
+      margin-bottom:1.5em;
     }
-
-
   }
 
 }

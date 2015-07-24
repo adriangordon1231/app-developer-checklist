@@ -1,7 +1,7 @@
 [
   {
     "sectionTitle":"Device Checks",
-    "thumbnail":"assets/images/angular.png",
+    "thumbnail":"assets/images/device.png",
     "checks":[
       {
         "description":"The app be installed on the target device",
@@ -147,7 +147,7 @@
   },
   {
     "sectionTitle":"Network Checks",
-    "thumbnail":"assets/images/angular.png",
+    "thumbnail":"assets/images/network.png",
     "checks":[
       {
         "description":"Does the app behaves according to specification if connected to the internet through Wi-Fi",
@@ -198,7 +198,7 @@
   },
   {
     "sectionTitle":"App Specific Checks",
-    "thumbnail":"assets/images/angular.png",
+    "thumbnail":"assets/images/app.png",
     "checks":[
       {
         "description":"The app been tested on different type of devices and different versions of OS",
@@ -269,7 +269,7 @@
   },
   {
     "sectionTitle":"User Interface Checks",
-    "thumbnail":"assets/images/angular.png",
+    "thumbnail":"assets/images/interface.png",
     "checks":[
       {
         "description":"The user can go back to a previous screen by touching a back button",

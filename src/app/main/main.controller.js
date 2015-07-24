@@ -21,6 +21,18 @@
         self.completePercentage = CheckListFactory.calculateCompletionPercentage(self.list);
       };
 
+
+
+      this.updateCompletionColor = function (percentCompleted) {
+        return {
+          'brightRed': percentCompleted < 0.1,
+          'orange':percentCompleted > 0.1 ,
+          'yellow': percentCompleted > 0.5,
+          'green': percentCompleted > 0.8,
+          'black': percentCompleted == 1
+        };
+      };
+
     });
 
 })();

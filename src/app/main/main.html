@@ -3,7 +3,11 @@
   <div class="row">
 
       <div class="col-sm-12">
-          <h1 class="text-center">Mobile Development Checklist - {{checklist.completePercentage | number: 2 | percentage }}</h1>
+          <h1 class="text-center main-title">Mobile Developer Checklist -
+            <span ng-class="checklist.updateCompletionColor(checklist.completePercentage)">
+            {{checklist.completePercentage | number: 2 | percentage }}
+            </span>
+          </h1>
       </div>
 
   </div>
@@ -40,7 +44,7 @@
 
   <div class="row footer">
     <div class="col-sm-12">
-      icons desingned by Freepik
+      icons desingned by <a target="_blank" href="http://www.freepik.com/">Freepik</a>
     </div>
   </div>
 
