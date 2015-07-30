@@ -29,7 +29,7 @@
           'orange':percentCompleted > 0.1 ,
           'yellow': percentCompleted > 0.5,
           'green': percentCompleted > 0.8,
-          'black': percentCompleted == 1
+          'black': percentCompleted === 1
         };
       };
 

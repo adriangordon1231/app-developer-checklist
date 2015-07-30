@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
 /**
  * General Styling
  */
@@ -8,6 +10,7 @@ html{
   body{
      @include fullscreen;
      background-image: url("../assets/images/bg.png");
+     font-family: 'Roboto', sans-serif;
   }
 }
 
@@ -18,10 +21,17 @@ html{
 }
 
 
+/**
+ * Bootstrap Overrides
+ */
+
+.panel-default > .panel-heading{
+ background-color:white;
+}
 
 
 /**
- * color classes
+ * Helper Classes
  */
 
 .brightRed{
@@ -44,6 +54,10 @@ html{
   color:black;
 }
 
+.checked{
+  text-decoration: line-through;
+  color:grey;
+}
 
 
 /**
@@ -54,6 +68,8 @@ html{
 
   .section{
     margin-bottom:2em;
+
+
 
 
     .title{
@@ -69,6 +85,13 @@ html{
     .checkbox{
       margin-bottom:1.5em;
     }
+
   }
 
+}
+
+.footer{
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
 }
