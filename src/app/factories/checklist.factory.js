@@ -36,7 +36,7 @@
        */
       var calculateCompletionPercentage = function (checklist) {
 
-        var listChecks = _.pluck(checklist,'checks')
+        var listChecks = _.pluck(checklist,'checks');
 
         // array of all the boolean values contained the checklist
         // basically, they represent the true/false state of every 'check' in the object
@@ -64,10 +64,51 @@
 
 
 
+      /**
+       * [
+       * 	returns a checklist object where the entered section's 'checks_completed' valus is set to a string
+       * 	represetation of the object's state of completion.
+       *
+       * 	E.G. if 5 of 20 objects in the sections 'checks' array has a 'value' of true, the function will
+       * 	return a complete checklist object where the 'checks_completed' value for the specificed section
+       * 	will be === 5/25 (String)
+       * ]
+       * @param  {[Object]} checklistObject [The entire checklist JSON object]
+       * @param  {[Object]} sectionObject   [object representation of a specific section of the checkslist JSON obeject]
+       * @return {[Object]}                 [checkList object with mutated 'checks_completed' value]
+       */
+      var updateChecksCompletedValue = function (checklistObject,sectionObject) {
+
+        var completionFraction = "";
+        var totalChecks = sectionObject.checks.length;
+        var completedChecks = 0;
+
+        var selectedSection = sectionObject.sectionAlias;
+
+        checklistObject.forEach(function (element) {
+
+          if(element.sectionAlias === selectedSection){
+
+            var checkedItems = _.filter(element.checks,function (n) {
+              return n.value === true;
+            });
+
+            completedChecks = checkedItems.length;
+            completionFraction = completedChecks + "/" + totalChecks;
+            element.checks_completed = completionFraction;
+          }
+        });
+
+        return checklistObject;
+      };
+
+
+
 
       return{
         getChekList:getChekList,
-        calculateCompletionPercentage: calculateCompletionPercentage
+        calculateCompletionPercentage: calculateCompletionPercentage,
+        updateChecksCompletedValue: updateChecksCompletedValue
       };
     });
 

@@ -23,13 +23,16 @@
           <accordion-heading>
             <img class="pull-left image" ng-src="{{section.thumbnail}}" alt="{{ section.sectionTitle }}" />
             <h4 class="title">{{section.sectionTitle}}</h4>
+            <p class = "pull-right completion-fraction">
+              {{section.checks_completed}}
+            </p>
 
           </accordion-heading>
 
 
             <div class="checkbox" ng-repeat="check in section.checks">
               <label>
-                <input type="checkbox" ng-change="checklist.updateCompletionPercentage()" ng-model="check.value">
+                <input type="checkbox" ng-change="checklist.updateCompletionStatus(section)" ng-model="check.value">
                 <span ng-class="{'checked': check.value === true}">{{check.description}}</span>
               </label>
             </div>

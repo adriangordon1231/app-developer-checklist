@@ -17,9 +17,16 @@
 
 
 
-      this.updateCompletionPercentage = function () {
+      /**
+       * [updates the values being reflected by controllers models based on the current state of the checklist]
+       * @param  {[Object]} sectionObject [*Optional* section Obeject]
+       * @return {[Void]}                
+       */
+      this.updateCompletionStatus = function (sectionObject) {
         self.completePercentage = CheckListFactory.calculateCompletionPercentage(self.list);
+        self.list = CheckListFactory.updateChecksCompletedValue(self.list,sectionObject);
       };
+
 
 
 
