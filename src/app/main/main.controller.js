@@ -20,11 +20,27 @@
       /**
        * [updates the values being reflected by controllers models based on the current state of the checklist]
        * @param  {[Object]} sectionObject [*Optional* section Obeject]
-       * @return {[Void]}                
+       * @return {[Void]}
        */
       this.updateCompletionStatus = function (sectionObject) {
         self.completePercentage = CheckListFactory.calculateCompletionPercentage(self.list);
         self.list = CheckListFactory.updateChecksCompletedValue(self.list,sectionObject);
+      };
+
+
+
+
+      /**
+       * [clears the checklist by resetting all of the models in this controller]
+       * @return {[Void]}
+       */
+      this.clearSelections = function () {
+
+        CheckListFactory.getChekList().then(function (data) {
+          self.list = data.data;
+        });
+
+        this.completePercentage = 0.0;
       };
 
 

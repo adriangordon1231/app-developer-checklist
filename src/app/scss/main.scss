@@ -35,7 +35,7 @@ html{
  */
 
 .brightRed{
-  color:#f00;
+  color:$brightRed;
 }
 
 .orange{
@@ -95,7 +95,9 @@ html{
 }
 
 .footer{
-  // position: absolute;
-  // bottom: 10px;
-  // width: 100%;
+
+  .clear-button{
+    background: $brightRed;
+    border-radius: 50%;
+  }
 }
