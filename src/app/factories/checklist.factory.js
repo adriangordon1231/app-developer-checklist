@@ -77,7 +77,7 @@
        * @param  {[Object]} sectionObject   [object representation of a specific section of the checkslist JSON obeject]
        * @return {[Object]}                 [checkList object with mutated 'checks_completed' value]
        */
-      var updateChecksCompletedValue = function (checklistObject,sectionObject) {
+      var updateChecksCompleted = function (checklistObject,sectionObject) {
 
         var completionFraction = "";
         var totalChecks = sectionObject.checks.length;
@@ -108,7 +108,7 @@
       return{
         getChekList:getChekList,
         calculateCompletionPercentage: calculateCompletionPercentage,
-        updateChecksCompletedValue: updateChecksCompletedValue
+        updateChecksCompleted: updateChecksCompleted
       };
     });
 

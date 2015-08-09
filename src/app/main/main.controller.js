@@ -9,11 +9,15 @@
       this.completePercentage = 0.0;
       this.list = {};
 
-      CheckListFactory.getChekList().then(function (data) {
 
-        self.list = data.data;
 
-      });
+      this.getDefaultChecklist = function () {
+        CheckListFactory.getChekList().then(function (data) {
+
+          self.list = data.data;
+
+        });
+      }
 
 
 
@@ -24,7 +28,11 @@
        */
       this.updateCompletionStatus = function (sectionObject) {
         self.completePercentage = CheckListFactory.calculateCompletionPercentage(self.list);
-        self.list = CheckListFactory.updateChecksCompletedValue(self.list,sectionObject);
+
+        if(sectionObject){
+          self.list = CheckListFactory.updateChecksCompleted(self.list,sectionObject);
+        }
+
       };
 
 
@@ -32,15 +40,21 @@
 
       /**
        * [clears the checklist by resetting all of the models in this controller]
+       * @param  {[Function]} callback [*Optional* callback function]
        * @return {[Void]}
        */
-      this.clearSelections = function () {
+      this.clearSelections = function (callback) {
 
         CheckListFactory.getChekList().then(function (data) {
           self.list = data.data;
         });
 
-        this.completePercentage = 0.0;
+        self.completePercentage = 0.0;
+
+        if(callback){
+          callback();
+        }
+
       };
 
 
@@ -55,6 +69,8 @@
           'black': percentCompleted === 1
         };
       };
+
+      this.getDefaultChecklist();
 
     });
 
