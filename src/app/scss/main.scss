@@ -21,6 +21,8 @@ html{
 }
 
 
+
+
 /**
  * Bootstrap Overrides
  */
@@ -28,6 +30,8 @@ html{
 .panel-default > .panel-heading{
  background-color:white;
 }
+
+
 
 
 /**
@@ -58,6 +62,8 @@ html{
   text-decoration: line-through;
   color:grey;
 }
+
+
 
 
 /**
@@ -94,10 +100,28 @@ html{
 
 }
 
+
+
+
 .footer{
 
   .clear-button{
     background: $brightRed;
     border-radius: 50%;
+  }
+
+  #footer-link{
+    @media screen and (max-width: $tablet-screen) {
+      display:none;
+    }
+  }
+}
+
+
+
+/* Github link styling*/
+#github-link{
+  @media screen and (max-width: $tablet-screen) {
+    display:none;
   }
 }
