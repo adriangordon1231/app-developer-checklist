@@ -11,62 +11,62 @@
         "links":[]
       },
       {
-        "description":"The app behave as designed/desired if there is an incoming call",
+        "description":"The app behaves as designed/desired if there is an incoming call",
         "value":false,
         "links":[]
       },
       {
-        "description":"The app behave as designed/desired when there is an incoming SMS",
+        "description":"The app behaves designed/desired when there is an incoming SMS",
         "value":false,
         "links":[]
       },
       {
-        "description":"The app behave as designed/desired when the charger is connected",
+        "description":"The app behaves as designed/desired when the charger is connected",
         "value":false,
         "links":[]
       },
       {
-        "description":"The app behave as designed/desired when the charger is disconnected",
+        "description":"The app behaves as designed/desired when the charger is disconnected",
         "value":false,
         "links":[]
       },
       {
-        "description":"The app behave as designed/desired when the charger is disconnected",
+        "description":"The app behaves as designed/desired when the charger is disconnected",
         "value":false,
         "links":[]
       },
       {
-        "description":"The app behave as designed/desired when the device goes to sleep mode",
+        "description":"The app behaves as designed/desired when the device goes to sleep mode",
         "value":false,
         "links":[]
       },
       {
-        "description":"The app behave as designed/desired when the device resumes from sleep mode",
+        "description":"The app behaves as designed/desired when the device resumes from sleep mode",
         "value":false,
         "links":[]
       },
       {
-        "description":"The app behave as designed/desired when the device resumes from lock screen",
+        "description":"The app behaves as designed/desired when the device resumes from lock screen",
         "value":false,
         "links":[]
       },
       {
-        "description":"The app behave as designed/desired when the device is tilted",
+        "description":"The app behaves as designed/desired when the device is tilted",
         "value":false,
         "links":[]
       },
       {
-        "description":"The app behave as designed/desired when the device is shaken",
+        "description":"The app behaves as designed/desired when the device is shaken",
         "value":false,
         "links":[]
       },
       {
-        "description":"The app behave as designed/desired when a local message is coming from another app (think of: calendar reminders, to-do task etc.)",
+        "description":"The app behaves as designed/desired when a local message is coming in from another app (think of: calendar reminders, to-do task etc.)",
         "value":false,
         "links":[]
       },
       {
-        "description":"The app behave as designed/desired when a push message is coming from another app (think of: facebook mentions, whatsapp message, etc)",
+        "description":"The app behaves as designed/desired when a push message is coming in from another app (think of: facebook mentions, whatsapp message, etc)",
         "value":false,
         "links":[]
       },
@@ -86,17 +86,17 @@
         "links":[]
       },
       {
-        "description":"In case there’s a true “back” button available on the device, the “back” button take the user to the previous screen",
+        "description":"In case there’s a true “back” button available on the device, the “back” button takes the user to the previous screen",
         "value":false,
         "links":[]
       },
       {
-        "description":"In case there’s a true “menu” button available on the device, the menu button show the app’s menu",
+        "description":"In case there’s a true “menu” button available on the device, the menu button shows the app’s menu",
         "value":false,
         "links":[]
       },
       {
-        "description":"In case there’s a true “home” button available on the device, the home button get the user back to the home screen of the device",
+        "description":"In case there’s a true “home” button available on the device, the home button gets the user back to the home screen of the device",
         "value":false,
         "links":[]
       },
@@ -121,7 +121,7 @@
         "links":[]
       },
       {
-        "description":"The app can be de-installed from the device",
+        "description":"The app can be uninstalled from the device",
         "value":false,
         "links":[]
       },
@@ -154,7 +154,7 @@
     "checks_completed":"0",
     "checks":[
       {
-        "description":"Does the app behaves according to specification if connected to the internet through Wi-Fi",
+        "description":"Does the app behave according to specification if connected to the internet through Wi-Fi",
         "value":false,
         "links":[]
       },
@@ -169,12 +169,12 @@
         "links":[]
       },
       {
-        "description":"The app behaves according to specification if the app is out of network reach",
+        "description":"The app behaves according to specification when it is out of network reach",
         "value":false,
         "links":[]
       },
       {
-        "description":"The app resumes working when it gets back into network reach from outside the reach of the network",
+        "description":"The app resumes working when it gets back into network reach (from outside the reach of the network)",
         "value":false,
         "links":[]
       },
@@ -189,7 +189,7 @@
         "links":[]
       },
       {
-        "description":"The app still works when the app switches between networks (Wi-Fi, 3G, 2G) ",
+        "description":"The app still works when switching between networks (Wi-Fi, 3G, 2G) ",
         "value":false,
         "links":[]
       },
@@ -207,7 +207,7 @@
     "checks_completed":"0",
     "checks":[
       {
-        "description":"The app been tested on different type of devices and different versions of OS",
+        "description":"The app has been tested on different type of devices and different versions of OS",
         "value":false,
         "links":[]
       },
@@ -222,7 +222,7 @@
         "links":[]
       },
       {
-        "description":"The apps size does not prevent downloading when connected to cellular networks (according to wat is allowed by the OS)",
+        "description":"The app's size does not prevent downloading when connected to cellular networks (according to what is allowed by the OS)",
         "value":false,
         "links":[]
       },
@@ -247,7 +247,7 @@
         "links":[]
       },
       {
-        "description":"Unedisred actions/uses have been handled appropriately (e.g. undesired multitouch, for example – select two contacts from the phone book at the same time)",
+        "description":"Undesired actions/uses have been handled appropriately (e.g. undesired multi-touch, for example – select two contacts from the phone book at the same time)",
         "value":false,
         "links":[]
       },
@@ -257,17 +257,12 @@
         "links":[]
       },
       {
-        "description":"The app name is self explanatory ",
-        "value":false,
-        "links":[]
-      },
-      {
         "description":"Reloading of data from remote service has been properly designed to prevent performance issues at server-side. (manual reloading of data can reduce the amount of server calls)",
         "value":false,
         "links":[]
       },
       {
-        "description":"The app go to sleep mode when running in the background",
+        "description":"The app goes into sleep mode when running in the background",
         "value":false,
         "links":[]
       }
@@ -285,7 +280,7 @@
         "links":[]
       },
       {
-        "description":"The main function of the app is apparent immediately. It should speak for itself. ",
+        "description":"The main function of the app is immediately apparent (It should speak for itself)",
         "value":false,
         "links":[]
       },
@@ -295,12 +290,12 @@
         "links":[]
       },
       {
-        "description":"User actions have been minimized by using a pickers, radio buttons and checkboxes (over textfiends when possible)",
+        "description":"User actions have been minimized by using a pickers, radio buttons and checkboxes (over textfields when possible)",
         "value":false,
         "links":[]
       },
       {
-        "description":"If there is a long list of data to scroll trough, a search option is provided above the list. ",
+        "description":"If there is a long list of data to scroll through, a search option is provided above the list",
         "value":false,
         "links":[]
       },
@@ -315,7 +310,7 @@
         "links":[]
       },
       {
-        "description":"Standard buttons are not used for other functions then that they are normally used for",
+        "description":"Standard buttons are not used for other functions",
         "value":false,
         "links":[]
       },
@@ -330,11 +325,6 @@
         "links":[]
       },
       {
-        "description":"You have not redefined gestures in your app that have standard meanings (example: swiping from top to bottom shows notifications) ",
-        "value":false,
-        "links":[]
-      },
-      {
         "description":"Requirement to login is delayed in the app as long as possible ... seriously, this is very annoying",
         "value":false,
         "links":[]
@@ -345,7 +335,7 @@
         "links":[]
       },
       {
-        "description":"The keyboard adjusts to expected the input (for instance numbers/letters when expected)",
+        "description":"The keyboard adjusts to the expected input (for instance numbers/letters when expected)",
         "value":false,
         "links":[]
       },
