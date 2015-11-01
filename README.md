@@ -2,6 +2,8 @@
 
 The mobile ap developer checklist is a simple web app meant to be used by mobile app developers for quality assurance purposes. A demo of the app can be viewed [here](http://checklist.adriangordon.me).
 
+![screenshot](screenshot.png "Screenshot")
+
 ## Adding Checks and Sections
 All of the sections and checks being displayed in the list are being pulled from the *checklist.json* file in the project root. To add either a section or check to the list, simply fork the project and add the additional data to the *checklist.json* file using the format below.
 
